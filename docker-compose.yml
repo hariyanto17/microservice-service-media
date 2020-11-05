@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  app:
+    container_name: media
+    build:
+      context: ./
+      dockerfile: app.dockerfile
+    image: app_service_media:1.0
+    ports:
+      - "8081:8081"
